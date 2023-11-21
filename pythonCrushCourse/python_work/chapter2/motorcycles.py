@@ -30,9 +30,14 @@
 
 guest_list = []
 
+
+print(len(guest_list))
+
 guest_list.append('Mandela')
 guest_list.append('Tupac')
 guest_list.append('Marley')
+
+print(len(guest_list))
 
 print(f'Welcome {guest_list} to the party')
 
@@ -48,8 +53,3 @@ print(f'Welcome {guest_list} to the party')
 
 del guest_list[:]
 print(guest_list)
-
-
-
-
-
