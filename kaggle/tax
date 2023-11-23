@@ -1,3 +1,5 @@
+### More functions
+
 def get_pay(num_hours):
     # Pre-tax pay, base on recieving $15/hour
     pay_pretax = num_hours * 15
