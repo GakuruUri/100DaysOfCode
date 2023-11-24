@@ -31,7 +31,7 @@ print(min(num_milli))
 print(max(num_milli))
 print(num_milli)
 
-# Multiples of 3
+# Multiples of 3 from 0 to 31
 threes = list(range(3, 31, 3))
 print(threes)
 
