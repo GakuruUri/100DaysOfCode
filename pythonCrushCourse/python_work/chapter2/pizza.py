@@ -15,3 +15,23 @@ for cat in jungle_cats:
     
     
 print("All these cats would also turn and fuckin' eat you")
+
+friend_pizzas = pizzas[:]
+
+pizzas.append('hawaian')
+friend_pizzas.append('marcon')
+
+
+print("My favorite pizzas: ")
+for pizza in pizzas[:]:
+    print(pizza)
+    
+    
+print("My friend’s favorite pizzas are: ")
+for pizza in friend_pizzas[:]:
+    print(pizza)
+
+
+
+
+
