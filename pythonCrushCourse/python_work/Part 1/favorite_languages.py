@@ -87,3 +87,71 @@ favorite_languages = {
 if 'erin' not in favorite_languages.keys():
     print("Erin, please take our poll!")
 
+
+
+ #Getting the dictionary in a particular order
+
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'rust',
+    'phil': 'python',
+}
+
+for name in sorted(favorite_languages.keys()):
+    print(f"{name.title()}, thank you for taking the poll.")
+
+
+# Looping through all values in a dictionary.
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'rust',
+    'phil': 'python',
+}
+
+print("The following languages have been mentioned:")
+for language in favorite_languages.values():
+    print(language.title())
+
+
+
+
+# Try it yourself 6.6
+
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'rust',
+    'phil': 'python',
+}
+
+# List of people who should take the poll
+people = ['jen', 'sarah', 'edward', 'phil', 'mike', 'lucy']
+
+for person in people:
+    if person in favorite_languages.keys():
+        print(f"Thank you {person.title()} for taking the poll.")
+    else:
+        print(f"Hi {person.title()}, please take the poll.")
+        
+        
+
+"""
+In this script, favorite_languages is a dictionary 
+that contains the names of people who have already 
+taken the poll and their favorite languages. 
+The people list contains the names of people who should 
+take the poll. The script then loops through the people list. 
+If a person’s name is found in the favorite_languages 
+dictionary (meaning they have already taken the poll), 
+a message is printed thanking them for taking the poll. 
+If a person’s name is not found in the favorite_languages 
+dictionary (meaning they have not yet taken the poll), 
+a message is printed inviting them to take the poll. 
+The title() function is used to ensure that the first 
+letter of each person’s name is capitalized in the printed 
+messages.
+
+"""        
+        
