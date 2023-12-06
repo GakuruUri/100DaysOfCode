@@ -34,4 +34,22 @@ for pizza in friend_pizzas[:]:
 
 
 
+# List in a Dictionary Day 17
+pizza = {
+    'crust': 'thick',
+    'toppings': ['mushrooms', 'extra cheese']
+}
+
+# Summarize the order.
+print(f"You ordered a {pizza['crust']}-crust pizza "
+      "WIth the following toppings:")
+
+for topping in pizza['toppings']:
+    print(f"\t{topping}")
+
+
+
+
+
+
 
