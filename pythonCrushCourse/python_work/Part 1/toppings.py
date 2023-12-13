@@ -91,3 +91,50 @@ for requested_topping in requested_toppings:
     else:
         print(f"Sorry we don't have {requested_topping}.")
 print("\nFinished making your pizza!")
+
+
+
+########################'''Try It yourself 7.4'''
+
+while True:
+    topping = input("Enter a topping for your pizza (or 'quit' to finish): ")
+    if topping.lower() == 'quit':
+        break
+    else:
+        print(f"I'll add {topping} to your pizza!")
+        
+        
+        
+'''Using a conditional test in the while statement to stop the loop:'''
+
+
+topping = ''
+while topping.lower() != 'quit':
+    topping = input("Enter a topping for your pizza (or 'quit' to finish): ")
+    if topping.lower() != 'quit':
+        print(f"I'll add {topping} to your pizza!")
+        
+        
+        
+        
+'Using an active variable to control how long the loop runs:'''
+
+
+active = True
+while active:
+    topping = input("Enter a topping for your pizza (or 'quit' to finish): ")
+    if topping.lower() == 'quit':
+        active = False
+    else:
+        print(f"I'll add {topping} to your pizza!")
+        
+        
+'''Using a break statement to exit the loop when the user enters a ‘quit’ value:'''
+
+
+while True:
+    topping = input("Enter a topping for your pizza (or 'quit' to finish): ")
+    if topping.lower() == 'quit':
+        break
+    else:
+        print(f"I'll add {topping} to your pizza!")
