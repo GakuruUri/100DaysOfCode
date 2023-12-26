@@ -34,5 +34,5 @@ def describe_pet(pet_name, animal_type='dog'):
 
 describe_pet('willie')
 describe_pet(pet_name='poppy')
-describe_pet(pet_name='kangaa', animal_type='mongoose').er.er.er.er.er.er.er
+describe_pet(pet_name='kangaa', animal_type='mongoose')
 
