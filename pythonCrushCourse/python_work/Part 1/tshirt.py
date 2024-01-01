@@ -7,6 +7,7 @@ Call the function once using positional arguments to make a shirt. Call the func
 
 
 def make_shirt(size, message):
+    """Print size and message on your shirt"""
     print(f"\nWhat is your t-shirt size? {size.title()}.")
     print(f"Your t-shirt size is {size.title()} and you picked the message {message.capitalize()}.")
    
@@ -14,7 +15,14 @@ def make_shirt(size, message):
 make_shirt('medium', 'Reggae man...')
 make_shirt(message="hello world", size='large')    
 
-
+# Option 2 for tshirt Learning python
+print("================================================")
+def make_shirt(size, message):
+    """Print size and message"""
+    print(f"The shirt is size {size} and shows the message {message}")
+    
+make_shirt(5, 'Hello, there!')
+make_shirt(message='Hello, there!', size=5)
 
 
 """
@@ -31,6 +39,18 @@ def make_shirt(message, size = 'large'):
     
 make_shirt('medium','Reggae man')
 make_shirt(message="Don't give up.")
+
+
+# Option 2 for tshirt Learning python
+print("================================================")
+def make_shirt(size='L', message='I love Python.'):
+    """Print size and message"""
+    print(f"The shirt is size {size} and shows the message {message}")
+    
+make_shirt(5, 'Hello, there!')
+make_shirt(message='Hello, there!', size=5)
+make_shirt()
+
 
 
 
