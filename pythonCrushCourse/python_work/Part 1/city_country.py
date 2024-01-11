@@ -15,3 +15,4 @@ def city_country(city, country):
 print(city_country("Nairobi", "Kenya"))
 print(city_country("Zanzibar", "Tanzania"))
 print(city_country("London", "United Kingdom"))
+print(city_country("Paris", "France"))
