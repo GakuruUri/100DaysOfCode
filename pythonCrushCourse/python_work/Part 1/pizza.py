@@ -1,4 +1,4 @@
-"""
+
 pizzas = ["margarita", "chicken", "beef"]
 for pizza in pizzas:
     # print(pizza)
@@ -48,7 +48,7 @@ print(f"You ordered a {pizza['crust']}-crust pizza "
 for topping in pizza['toppings']:
     print(f"\t{topping}")
 
-"""
+
 
 def make_pizza(size, *toppings):
     """Summarize the pizza we are about to make"""
