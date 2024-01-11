@@ -1,0 +1,24 @@
+### More functions
+
+def get_pay(num_hours):
+    # Pre-tax pay, base on recieving $15/hour
+    pay_pretax = num_hours * 15
+    # After tax pay, based on being in 12% tax bracket
+    pay_aftertax = pay_pretax * (1 - .12)
+    return pay_aftertax
+
+# We call this 
+
+pay_fulltime = get_pay(40)
+print(pay_fulltime)
+
+
+"""
+To quickly calculate pay based on a different number 
+of hours worked, you need to supply the function 
+with a different number. For instance, 
+say your friend works 32 hours. (Then, they get $422.40.)    
+"""
+
+pay_fulltime = get_pay(32)
+print(pay_fulltime)

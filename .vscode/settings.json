@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./pythonCrushCourse/python_work/Part 1"
+    ]
+}
