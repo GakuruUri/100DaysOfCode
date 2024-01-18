@@ -4,6 +4,9 @@ import pizza
 pizza.make_pizza(16, 'pepperoni',)
 pizza.make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese,')
 
+
+'''
+
 # You can import specific functions [Importing Specific Functions]
 print("=== You can import specific functions [Importing Specific Functions] ==")
 from pizza import make_pizza
@@ -24,4 +27,7 @@ from pizza import *
 
 make_pizza(16, 'pepperoni')
 make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
+'''
+
+
 

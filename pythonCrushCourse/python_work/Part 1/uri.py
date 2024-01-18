@@ -80,7 +80,7 @@ make_pizza('pepperoni')
 make_pizza('mushrooms', 'green peppers', 'extra cheese')
 '''
 
-
+'''
 def build_profile(first, last, **user_info):
     #Build a dictionary containing everything we know about a user.
     user_info['first_name'] = first
@@ -89,6 +89,50 @@ def build_profile(first, last, **user_info):
 
 user_profile = build_profile('albert', 'einstein', location='princeton', field='physics')
 print(user_profile)
+'''
+
+'''
+def sandwich_ingredients(*args):
+    #Print a summary of the sandwich being ordered.
+    print("\nThese are the sandwich ingredients:")
+    for arg in args:
+        print(f"-{arg}")
+        
+        
+sandwich_ingredients("=====")
+sandwich_ingredients('salad', 'cucumber', 'chicken')
+sandwich_ingredients('salad', 'cucumber', 'chicken', 'tuna')
+'''
+
+'''
+def build_profile(first, last, **user_info):
+    #Build a dictionary containing everything about a user:
+    user_info['first_name'] = first
+    user_info['last_name'] = last
+    return user_info
+
+user_info = build_profile('Uri', 'Gakuru', location='Ikinu', language = 'Python', mood='Shaky', drive='Future')
+print(user_info)
+'''
+
+
+def make_car(manufucturer, model, **car_info):
+    #Build a dictionary containing everything we know about a car.
+    car_info['manufucturer'] = manufucturer
+    car_info['model'] = model
+    return car_info
+
+car = make_car('subaru', 'outback', color='blue', tow_package=True)
+print(car)
+
+
+
+
+
+
+
+
+
 
 
 
