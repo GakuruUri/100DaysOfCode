@@ -63,6 +63,19 @@ import module_name as mn
 from module_name import *
 
 '''
+import printing_functions
+
+unprinted_designs = ['phone case', 'robot pendant', 'dodecahedron']
+completed_models = []
+
+printing_functions.print_models(unprinted_designs, completed_models)
+printing_functions.show_completed_models(completed_models)
+
+
+
+
+
+
 import pizza
 pizza.make_pizza(16, 'pepperoni')
 
@@ -72,7 +85,7 @@ make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
 
 
 from pizza import make_pizza as mp
-make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
+mp(13, 'mushrooms', 'green peppers', 'extra cheese')
 
 
 import pizza as p
