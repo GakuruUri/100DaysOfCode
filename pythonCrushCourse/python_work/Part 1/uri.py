@@ -159,146 +159,25 @@ your_dog.sit()
 '''
 
 
-'''
-9-1. Restaurant:
-Make a class called Restaurant. The __init__() method for Restaurant should store two attributes:
-a restaurant_name and a cuisine_type.
-Make a method called describe_restaurant() that prints these two pieces of information,
-and a method called open_restaurant() that prints a message indicating that the restaurant is open.
-Make an instance called restaurant from your class. Print the two attributes individually,
-and then call both methods.
-'''
-
-class Restaurant:
-    # A simple class describing a restaurant
-    
-    def __init__(self, restaurant_name, cuisine_type):
-        # Describe the restaurants name and cuisune type
-        self.restaurant_name = restaurant_name
-        self.cuisine_type = cuisine_type
-        
-        
-    def describe_restaurant(self):
-        # Describe our reaturant/print a summary of our restaurant.
-        #print(f"Kwa {self.restaurant_name} serves mostly {self.cuisine_type} dishes.")
-        print(f"The restaurant is called {self.restaurant_name}.")
-        print(f"The cuisine type is {self.cuisine_type}.")
-        
-        
-    def open_restaurant(self):
-        #Print a message indicating that we are open
-        #print(f"{self.restaurant_name} is open for business.")
-        print(F" The restaurant {self.restaurant_name} is open.")
-        
-
-restaurant = Restaurant('Kwa Mathe', 'Kibandaski foods')
-print(f"Restaurant name: {restaurant.restaurant_name}.")
-print(f"Restaurant cuisine: {restaurant.cuisine_type}.")
-
-restaurant.describe_restaurant()
-restaurant.open_restaurant
 
 
 
+class Car:
+    # A simple attempt to represent a car
+
+    def __init__(self, make, model, year):
+        # Initialize attributes to describe the car
+        self.make = make
+        self.model = model
+        self.year = year
 
 
-
-'''
-9-2. Three Restaurants: Start with your class from Exercise 9-1.
-Create three different instances from the class,
-and call describe_restaurant() for each instance.
-'''
-class Restaurant:
-    # A simple class describing a restaurant
-    
-    def __init__(self, restaurant_name, cuisine_type):
-        # Describe the restaurants name and cuisune type
-        self.restaurant_name = restaurant_name
-        self.cuisine_type = cuisine_type
-        
-        
-    def describe_restaurant(self):
-        # Describe our reaturant/print a summary of our restaurant.
-        #print(f"Kwa {self.restaurant_name} serves mostly {self.cuisine_type} dishes.")
-        print(f"The restaurant is called {self.restaurant_name}.")
-        print(f"The cuisine type is {self.cuisine_type}.")
-        
-        
-    def open_restaurant(self):
-        #Print a message indicating that we are open
-        #print(f"{self.restaurant_name} is open for business.")
-        print(F" The restaurant {self.restaurant_name} is open.")
-        
-'''
-restaurant = Restaurant('Kwa Mathe', 'Kibandaski foods')
-print(f"Restaurant name: {restaurant.restaurant_name}.")
-print(f"Restaurant cuisine: {restaurant.cuisine_type}.")
-
-restaurant.describe_restaurant()
-restaurant.open_restaurant
-'''
-
-french_restaurant = Restaurant('Brasserie', 'French')
-italian_restaurant = Restaurant('Luigis', 'Italian')
-chinese_restaurant = Restaurant('Beijing Temple', 'Chinese')
-
-french_restaurant.describe_restaurant()
-print("_____")
-
-italian_restaurant.describe_restaurant()
-print("_____")
-
-chinese_restaurant.describe_restaurant()
-print("_____")
-
-
-
-'''
-9-3. Users:
-Make a class called User.
-Create two attributes called first_name and last_name,
-and then create several other attributes that are typically stored in a user profile.
-Make a method called describe_user() that prints a summary of the user’s information.
-Make another method called greet_user() that prints a personalized greeting to the user.
-Create several instances representing different users, and call both methods for each user.
-'''
-
-
-class User:
-    # A simple user class
-    
-    def __init__(self, first_name, last_name, location, age):
-        #Initialize user calss and attributes
-        self.first_name = first_name
-        self.last_name = last_name
-        self.location = location
-        self.age = age
-        
-        
-    def describe_user(self):
-        # Describe a user
-        print(f"The user's name is {self.first_name} {self.last_name}.")
-        print(f"The user is {self.age} years old and lives in {self.location}.")
-        
-        
-    def greet_user(self):
-        # Greet a user
-        print(f"Hello, {self.first_name} {self.last_name}!")
-        
-        
-user_1 = User('Bob', 'the builder', 'London', 42)
-user_1.describe_user()
-user_1.greet_user()
-
-print("_____")
-
-
-user_2= User('Uri', 'Gakuru', 'Ikinu', 37)
-user_2.describe_user()
-user_2.greet_user()
-
-
-
+    def get_descriptive_name(self):
+        # Return a neatly formatted descripive name.
+        long_name = f"{self.year} {self.make} {self.model}"
+        return long_name.title()
+my_new_car = Car(2024, 'audi', 'a4')
+print(my_new_car.get_descriptive_name())
 
 
 
