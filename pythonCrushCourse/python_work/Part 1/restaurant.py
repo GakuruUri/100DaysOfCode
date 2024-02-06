@@ -162,3 +162,84 @@ print(f"Number served: {restaurant.number_served}")
 
 restaurant.increment_number_served(110)
 print(f"Number served: {restaurant.number_served}")
+
+
+
+
+
+
+
+'''
+9-1. Restaurant:
+Make a class called Restaurant. The __init__() method for Restaurant should store two attributes:
+a restaurant_name and a cuisine_type.
+Make a method called describe_restaurant() that prints these two pieces of information,
+and a method called open_restaurant() that prints a message indicating that the restaurant is open.
+Make an instance called restaurant from your class. Print the two attributes individually,
+and then call both methods.
+
+
+
+9-6. Ice Cream Stand: An ice cream stand is a specific kind of restaurant. Write
+a class called IceCreamStand that inherits from the Restaurant class you wrote in
+Exercise 9-1 (page 162) or Exercise 9-4 (page 166). Either version of the class
+will work; just pick the one you like better. Add an attribute called flavors that
+stores a list of ice cream flavors. Write a method that displays these flavors.
+Create an instance of IceCreamStand, and call this method.
+'''
+
+class Restaurant:
+    # A simple class describing a restaurant
+    
+    def __init__(self, restaurant_name, cuisine_type):
+        # Describe the restaurants name and cuisune type
+        self.restaurant_name = restaurant_name
+        self.cuisine_type = cuisine_type
+        
+        
+    def describe_restaurant(self):
+        # Describe our reaturant/print a summary of our restaurant.
+        #print(f"Kwa {self.restaurant_name} serves mostly {self.cuisine_type} dishes.")
+        print(f"The restaurant is called {self.restaurant_name}.")
+        print(f"The cuisine type is {self.cuisine_type}.")
+        
+        
+    def open_restaurant(self):
+        #Print a message indicating that we are open
+        #print(f"{self.restaurant_name} is open for business.")
+        print(F" The restaurant {self.restaurant_name} is open.")
+        
+        
+class IceCreamStand(Restaurant):
+    # A simple ice cream stand(Inheriting from the restaurant class)
+    
+    def __init__(self, restaurant_name, cuisine_type, flavors):
+        # Initialize icecream stand
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavors = flavors
+        
+    def display_flavor(self):
+        # Display icecream flavors
+        print(f"The flavors are")
+        for flavor in self.flavors:
+            print(f"-{flavor}")
+        
+ice_cream = IceCreamStand('ice cream parlor', 'ice cream', [' chocolate', ' banana', ' funky monkey', ' blueberry'])
+ice_cream.display_flavor()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
