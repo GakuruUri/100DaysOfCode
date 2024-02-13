@@ -207,7 +207,7 @@ class Restaurant:
     def open_restaurant(self):
         #Print a message indicating that we are open
         #print(f"{self.restaurant_name} is open for business.")
-        print(F" The restaurant {self.restaurant_name} is open.")
+        print(f" The restaurant {self.restaurant_name} is open.")
         
         
 class IceCreamStand(Restaurant):

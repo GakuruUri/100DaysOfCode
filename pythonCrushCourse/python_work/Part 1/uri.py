@@ -330,7 +330,7 @@ should check the battery size and set the capacity to 65 if it isn’t already. 
 an electric car with a default battery size, call get_range() once, and then
 call get_range() a second time after upgrading the battery. You should see an
 increase in the car’s range.
-'''
+
 
 
 
@@ -417,7 +417,12 @@ my_tesla = ElectricCar("tesla", "Model S", 2019)
 my_tesla.battery.get_range()
 my_tesla.battery.upgrade_battery()
 my_tesla.battery.get_range()
-
+'''
+def dis(price, discount):
+	disc = price * (discount/100)
+	return price - disc
+	
+print(dis(593, 61))
 
 
 
