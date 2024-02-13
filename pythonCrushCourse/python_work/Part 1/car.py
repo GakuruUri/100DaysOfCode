@@ -35,7 +35,8 @@ class Car:
         # Add the given amaount to the odometer reading
         self.odometer_reading += miles
 
-
+#move the below classes to a new module electric_car2.py
+'''
 class Battery:
     # A simple attempt to model a battery for an electric car.
     def __init__(self, battery_size=40):
@@ -70,3 +71,4 @@ class ElectricCar(Car):
         """
         super().__init__(make, model, year)
         self.battery = Battery()
+'''
