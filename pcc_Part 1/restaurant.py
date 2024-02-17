@@ -1,5 +1,4 @@
-
-# '''
+'''
 # 9-1. Restaurant:
 # Make a class called Restaurant. The __init__() method for Restaurant should store two attributes:
 # a restaurant_name and a cuisine_type.
@@ -7,7 +6,7 @@
 # and a method called open_restaurant() that prints a message indicating that the restaurant is open.
 # Make an instance called restaurant from your class. Print the two attributes individually,
 # and then call both methods.
-# '''
+
 
 # class Restaurant:
 #     # A simple class describing a restaurant
@@ -37,8 +36,7 @@
 
 # restaurant.describe_restaurant()
 # restaurant.open_restaurant
-
-
+'''
 
 
 
@@ -109,7 +107,7 @@ Add a method called increment_number_served() that lets you increment
 the number of customers who’ve been served. Call this method with any number
 you like that could represent how many customers were served in, say, a day of
 business.
-'''
+
 
 
 class Restaurant:
@@ -162,7 +160,7 @@ print(f"Number served: {restaurant.number_served}")
 
 restaurant.increment_number_served(110)
 print(f"Number served: {restaurant.number_served}")
-
+'''
 
 
 
@@ -186,7 +184,7 @@ Exercise 9-1 (page 162) or Exercise 9-4 (page 166). Either version of the class
 will work; just pick the one you like better. Add an attribute called flavors that
 stores a list of ice cream flavors. Write a method that displays these flavors.
 Create an instance of IceCreamStand, and call this method.
-'''
+
 
 class Restaurant:
     # A simple class describing a restaurant
@@ -226,14 +224,38 @@ class IceCreamStand(Restaurant):
         
 ice_cream = IceCreamStand('ice cream parlor', 'ice cream', [' chocolate', ' banana', ' funky monkey', ' blueberry'])
 ice_cream.display_flavor()
+'''
+
+
+'''
+9-10. Imported Restaurant: Using your latest Restaurant class, store it in a module.
+Make a separate file that imports Restaurant. Make a Restaurant instance,
+and call one of Restaurant’s methods to show that the import statement is working
+properly.
+'''
 
 
 
-
-
-
-
-
+class Restaurant:
+    # A simple class describing a restaurant
+    
+    def __init__(self, restaurant_name, cuisine_type):
+        # Describe the restaurants name and cuisune type
+        self.restaurant_name = restaurant_name
+        self.cuisine_type = cuisine_type
+        
+        
+    def describe_restaurant(self):
+        # Describe our reaturant/print a summary of our restaurant.
+        #print(f"Kwa {self.restaurant_name} serves mostly {self.cuisine_type} dishes.")
+        print(f"The restaurant is called {self.restaurant_name}.")
+        print(f"The cuisine type is {self.cuisine_type}.")
+        
+        
+    def open_restaurant(self):
+        #Print a message indicating that we are open
+        #print(f"{self.restaurant_name} is open for business.")
+        print(f" The restaurant {self.restaurant_name} is open.")
 
 
 

@@ -87,113 +87,113 @@ make sure it was reset to 0.
 '''
 
 
-class User:
-    # A simple user class
+# class User:
+#     # A simple user class
     
-    def __init__(self, first_name, last_name, location, age):
-        #Initialize user calss and attributes
-        self.first_name = first_name
-        self.last_name = last_name
-        self.location = location
-        self.age = age
-        self.login_attempts = 0
+#     def __init__(self, first_name, last_name, location, age):
+#         #Initialize user calss and attributes
+#         self.first_name = first_name
+#         self.last_name = last_name
+#         self.location = location
+#         self.age = age
+#         self.login_attempts = 0
         
         
-    def describe_user(self):
-        # Describe a user
-        print(f"The user's name is {self.first_name} {self.last_name}.")
-        print(f"The user is {self.age} years old and lives in {self.location}.")
+#     def describe_user(self):
+#         # Describe a user
+#         print(f"The user's name is {self.first_name} {self.last_name}.")
+#         print(f"The user is {self.age} years old and lives in {self.location}.")
         
         
-    def greet_user(self):
-        # Greet a user
-        print(f"Hello, {self.first_name} {self.last_name}!")
+#     def greet_user(self):
+#         # Greet a user
+#         print(f"Hello, {self.first_name} {self.last_name}!")
 
-    def increment_login_attempts(self):
-        #Increament number of login attempts by one.
-        self.login_attempts += 1
+#     def increment_login_attempts(self):
+#         #Increament number of login attempts by one.
+#         self.login_attempts += 1
         
 
-    def reset_login_attempts(self):
-        #reset login attempts to zero 0
-        self.login_attempts = 0
+#     def reset_login_attempts(self):
+#         #reset login attempts to zero 0
+#         self.login_attempts = 0
 
-user = User('John', 'Doe', 'Boston', 35)
-user.increment_login_attempts()
-user.increment_login_attempts()
-user.increment_login_attempts()
-print(f"Login attempts: {user.login_attempts}")
-
-
-user.reset_login_attempts()
-print(f"Login attempts (after reset): {user.login_attempts}")
+# user = User('John', 'Doe', 'Boston', 35)
+# user.increment_login_attempts()
+# user.increment_login_attempts()
+# user.increment_login_attempts()
+# print(f"Login attempts: {user.login_attempts}")
 
 
+# user.reset_login_attempts()
+# print(f"Login attempts (after reset): {user.login_attempts}")
 
 
-'''
-9-3. Users:
-Make a class called User.
-Create two attributes called first_name and last_name,
-and then create several other attributes that are typically stored in a user profile.
-Make a method called describe_user() that prints a summary of the user’s information.
-Make another method called greet_user() that prints a personalized greeting to the user.
-Create several instances representing different users, and call both methods for each user.
 
 
-9-7. Admin: An administrator is a special kind of user. Write a class called
-Admin that inherits from the User class you wrote in Exercise 9-3 (page 162)
-or Exercise 9-5 (page 167). Add an attribute, privileges, that stores a list of
-strings like "can add post", "can delete post", "can ban user", and so on.
-Write a method called show_privileges() that lists the administrator’s set of
-privileges. Create an instance of Admin, and call your method.
+# '''
+# 9-3. Users:
+# Make a class called User.
+# Create two attributes called first_name and last_name,
+# and then create several other attributes that are typically stored in a user profile.
+# Make a method called describe_user() that prints a summary of the user’s information.
+# Make another method called greet_user() that prints a personalized greeting to the user.
+# Create several instances representing different users, and call both methods for each user.
 
 
-'''
+# 9-7. Admin: An administrator is a special kind of user. Write a class called
+# Admin that inherits from the User class you wrote in Exercise 9-3 (page 162)
+# or Exercise 9-5 (page 167). Add an attribute, privileges, that stores a list of
+# strings like "can add post", "can delete post", "can ban user", and so on.
+# Write a method called show_privileges() that lists the administrator’s set of
+# privileges. Create an instance of Admin, and call your method.
 
 
-class User:
-    # A simple user class
+# '''
+
+
+# class User:
+#     # A simple user class
     
-    def __init__(self, first_name, last_name, location, age):
-        #Initialize user class and attributes
-        self.first_name = first_name
-        self.last_name = last_name
-        self.location = location
-        self.age = age
+#     def __init__(self, first_name, last_name, location, age):
+#         #Initialize user class and attributes
+#         self.first_name = first_name
+#         self.last_name = last_name
+#         self.location = location
+#         self.age = age
         
         
-    def describe_user(self):
-        # Describe a user
-        print(f"The user's name is {self.first_name} {self.last_name}.")
-        print(f"The user is {self.age} years old and lives in {self.location}.")
+#     def describe_user(self):
+#         # Describe a user
+#         print(f"The user's name is {self.first_name} {self.last_name}.")
+#         print(f"The user is {self.age} years old and lives in {self.location}.")
         
         
-    def greet_user(self):
-        # Greet a user
-        print(f"Hello, {self.first_name} {self.last_name}!")
+#     def greet_user(self):
+#         # Greet a user
+#         print(f"Hello, {self.first_name} {self.last_name}!")
         
 
-class Admin(User):
-    # A simple admin class
+# class Admin(User):
+#     # A simple admin class
     
-    def __init__(self, first_name, last_name, location, age, privileges):
-        # Initialize admin class and attributes
-        self.first_name = first_name
-        self.last_name = last_name
-        self.location = location
-        self.age = age
-        self.privileges = privileges
+#     def __init__(self, first_name, last_name, location, age, privileges):
+#         # Initialize admin class and attributes
+#         self.first_name = first_name
+#         self.last_name = last_name
+#         self.location = location
+#         self.age = age
+#         self.privileges = privileges
         
         
-    def show_privileges(self):
-        # Display privileges
-        print("Privileges:")
-        for privilege in self.privileges:
-            print(f"-{privilege}")
+#     def show_privileges(self):
+#         # Display privileges
+#         print("Privileges:")
+#         for privilege in self.privileges:
+#             print(f"-{privilege}")
 
-admin_1 = Admin('Adam', 'Admin', 'NYC', 28, ['can add post', 'can delete post', 'can ban user'])
-admin_1.show_privileges()
+# admin_1 = Admin('Adam', 'Admin', 'NYC', 28, ['can add post', 'can delete post', 'can ban user'])
+# admin_1.show_privileges()
 
 
 
@@ -224,6 +224,62 @@ method to show its privileges.
 
 '''
 
+
+# class User:
+#     # A simple user class
+    
+#     def __init__(self, first_name, last_name, location, age):
+#         #Initialize user calss and attributes
+#         self.first_name = first_name
+#         self.last_name = last_name
+#         self.location = location
+#         self.age = age
+        
+        
+#     def describe_user(self):
+#         # Describe a user
+#         print(f"The user's name is {self.first_name} {self.last_name}.")
+#         print(f"The user is {self.age} years old and lives in {self.location}.")
+        
+        
+#     def greet_user(self):
+#         # Greet a user
+#         print(f"Hello, {self.first_name} {self.last_name}!")
+
+# class Privileges:
+#     # A simple privileges class
+#     def __init__(self, privileges):
+#         self.privileges = privileges
+        
+#     def show_privileges(self):
+#         # Display privileges
+#         print("Privileges:")
+#         for privilege in self.privileges:
+#             print(f"-{privilege}")
+
+
+# class Admin(User):
+#     # A simple admin class
+    
+#     def __init__(self, first_name, last_name, location, age, privileges):
+#         # Initialize admin class and attributes
+#         self.first_name = first_name
+#         self.last_name = last_name
+#         self.location = location
+#         self.age = age
+#         self.privileges = Privileges(privileges)
+        
+# admin_1 = Admin('Adam', 'Admin', 'NYC', 28, ['can add post', 'can delete post', 'can ban user'])
+# admin_1.privileges.show_privileges()
+
+
+
+'''
+9-11. Imported Admin: Start with your work from Exercise 9-8 (page 173). Store
+the classes User, Privileges, and Admin in one module. Create a separate file,
+make an Admin instance, and call show_privileges() to show that everything is
+working correctly.
+'''
 
 class User:
     # A simple user class
@@ -268,9 +324,19 @@ class Admin(User):
         self.location = location
         self.age = age
         self.privileges = Privileges(privileges)
-        
-admin_1 = Admin('Adam', 'Admin', 'NYC', 28, ['can add post', 'can delete post', 'can ban user'])
-admin_1.privileges.show_privileges()
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
