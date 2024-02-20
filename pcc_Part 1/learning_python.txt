@@ -1,0 +1,3 @@
+In python you can use l or rstrip to remove while spaces.
+in python you can use print keyword to print an output
+in python you can use loops like for, while.
